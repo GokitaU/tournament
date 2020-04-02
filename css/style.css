@@ -1,0 +1,739 @@
+/* variables */
+:root {
+    --orange-color: #ff8644;
+    --blue-color: #7574b3;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.index {
+    background: url(/img/main/Main_bg.jpg) center center/cover no-repeat;
+}
+body ul {
+    text-decoration: none;
+    list-style: none;
+}
+body .heads_main {
+    position: absolute;
+    opacity: 0;
+    animation: heads;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes heads {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+.head_ryk {
+    top: 20%;
+}
+.head_tit {
+    top: 70%;
+}
+.head_pas {
+    top: 20%;
+    right: 0;
+}
+.head_lev {
+    top: 70%;
+    right: 0;
+}
+/* Оформление header footer */
+header {
+    height: 100px;
+    box-shadow: 0 0 11.1px 2px rgba(255, 255, 255, 0.25);
+    background-color:rgba(0, 0, 0, 0.9);
+}
+header .menu {
+    padding-top: 30px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.33;
+}
+.menu ul {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.logo_tp {
+    position: absolute;
+    padding-left: 20px;
+}
+a {
+    color: var(--blue-color);
+    text-decoration: none;
+}
+.arrow {
+    margin: 15px 0 0 5px;
+}
+
+a:hover {
+    color: var(--orange-color);
+}
+a .vk_nav {
+    background: url(/img/main/vk_logo.png) center center/cover no-repeat;
+}
+a .vk_nav:hover {
+    opacity: 0.5;
+}
+.active_header {
+    color: var(--orange-color);
+}
+.menu ul .history_head {
+    position: relative;
+}
+.menu ul .history_head .history_submenu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -40px;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 210px;
+    padding-top: 5px;
+    box-shadow: 0.3px 4px 6.2px 0.8px rgba(255, 255, 255, 0.25);
+    background-color: #021722;
+}
+.history_submenu ul li {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--blue-color);
+    margin-top: 10px;
+}
+.mobile_menu {
+    position: absolute;
+    left: -50%;
+    width: 50%;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    background-color:rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 10px 0;
+    transition: 1s all;
+}
+.mobile_menu_active {
+    left: 0;
+}
+.mobile_menu ul li {
+    margin-top: 16px;
+}
+footer {
+    padding: 35px 30px 0px 15px;
+    height: 116px;
+    background-color: #7574b3;
+    opacity: 0.8;
+    position: relative;
+}
+footer .footer_list {
+    display: flex;
+    margin-left: 40px;
+}
+footer .footer_list li a {
+    margin-left: 30px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.43);
+}
+footer .footer_list a img {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+}
+footer .footer_list li a:hover {
+    color: var(--orange-color);
+}
+footer .wrapper a img:hover {
+    opacity: 0.5;
+}
+
+    @media (max-width: 1260px) {
+        .logo_tp {
+            display: none;
+        }
+    }
+    @media (max-width: 900px) {
+        .wrapper .menu ul li {
+            font-size: 24px;
+        }
+        footer {
+            height: 100px;
+        }
+        footer .footer_list li {
+            margin-left: 10px;
+        }
+        footer .footer_list li a {
+            font-size: 24px;
+        }
+        footer .footer_list li a img {
+            top: 35px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 702px) {
+        .wrapper .menu ul {
+            display: none;
+        }
+        .logo_tp {
+            display: inline-block;
+            /* position: absolute; */
+            right: 5%;
+            top: 30px;
+        }
+        .lines {
+            padding: 20px;
+        }
+        .lines span {
+            display: block;
+            margin-top: 10px;
+            width: 50px;
+            height: 5px;
+            background-color: #fff;
+            transition: 0.5s all;
+        }
+        .line_active span:nth-child(1){
+            transform: rotate(-45deg) translateX(-10px);
+        }
+        .line_active span:nth-child(2){
+            display: none;
+        }
+        .line_active span:nth-child(3){
+            transform: rotate(45deg) translateX(-10px);
+        }
+        footer {
+            padding: 0;
+            height: 70px;
+            padding: 25px 10px 0 0;
+        }
+        footer .footer_list {
+            margin: 0;
+        }
+        footer .footer_list li a {
+            margin: 0 auto;
+        }
+        footer .footer_list li a img {
+            top: 20px;
+            right: 40px;
+            width: 30px;
+            height: 30px;
+        }
+        footer ul li a {
+            font-size: 12px;
+        }
+        footer a img {
+            display: none;
+        }
+    }
+    @media (max-width: 534px) {
+        footer {
+            height: 50px;
+            padding: 15px;
+        }
+        footer .footer_list li a {
+            font-size: 1em;
+        }
+    }
+/* Оформление index */
+.container {
+    padding: 100px 200px 150px 200px;
+    margin: 0 auto;
+    max-width: 900px;
+    min-height: 768px;
+    background: rgba(70, 46, 45, 0.2);
+}
+h1 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--orange-color);
+    position: relative;
+    animation: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    0%   {top: -100px;}
+    100% {top: 0px;}
+}
+h1 span {
+    font-weight: 300;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 401px;
+    height: 80px;
+    border-radius: 20px;
+    border: solid 4.4px #7574b3;
+    background-color: #7574b3;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    opacity: 0;
+    position: relative;
+    animation: btn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+button:hover {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+.words {
+    margin-top: 70px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--orange-color);
+    position: relative;
+    animation: text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes text {
+    0%   {left: -1000px;}
+    100% {left: 0;}
+}
+.words span {
+    color: #ffffff;
+}
+
+    @media (max-width: 900px) {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    @media (max-width: 702px) {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+        .container h1 {
+            margin-top: 100px;
+            font-size: 36px;
+        }
+        button {
+            margin-top: 100px;
+            margin-bottom: 150px;
+            width: 300px;
+            height: 80px;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 534px) {
+        .heads_main {
+            display: none;
+        }
+        .container h1 {
+            font-size: 2em;
+        }
+        button {
+            font-size: 1.5em;
+            width: 240px;
+            height: 60px;
+        }
+    }
+
+/* СТРАНИЦА СЕЗОН */
+
+.write_results {
+    height: 768px;
+    background-color: #111030;
+}
+.season .container {
+    padding: 10px 50px 30px 50px;
+}
+form {
+    margin: 10px 160px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.input_form:first-child {
+    padding-top: 50px;
+}
+form .input_form {
+    margin-top: 40px;
+    color: var(--orange-color);
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 1.33;
+    text-align: right;
+}
+.input_form input {
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    width: 350px;
+    height: 34px;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    background-color: #7574b3;
+    padding-left: 5px;
+}
+.input_form input:hover {
+    box-shadow: 0.2px 3px 24.3px 2.7px rgba(255, 255, 255, 0.25);
+}
+.send {
+    margin: 40px 100px 0 0;
+    font-size: 20px;
+    width: 196px;
+    height: 49px;
+}
+.text_uciki {
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+.heads {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.heads .head img{
+    position: static;
+    display: block;
+    margin: 20px 10px 0 10px;
+}
+
+/* СЕКЦИЯ РЕЗУЛЬТАТОВ */
+.table_results {
+    background: url(/img/season/bg_table_results.jpg) center center/cover no-repeat;
+    height: 768px;
+}
+.table_results h2 {
+    margin-top: 40px;
+    font-family: Roboto;
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+    color: #ffffff;
+}
+table {
+    margin: 0 auto;
+    color: white;
+    margin-top: 80px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 500;
+}
+.head_table {
+    color: var(--orange-color);
+}
+table td {
+    padding: 20px 0 0 10px;
+}
+table tr {
+    text-align: center;
+}
+table .name {
+    text-align: right;
+    color: var(--orange-color);
+}
+
+    @media (max-width: 900px) {
+        .season .container {
+            width: 100%;
+            padding: 10px 0;
+        }
+        form {
+            margin: 0 auto;
+            align-items: center;
+        }
+        .send {
+            margin: 40px auto;
+        }
+        .input_form {
+            display: block;
+            margin-top: 0;
+            text-align: center;
+            padding: 0;
+        }
+        .input_form input {
+            margin: 10px auto;
+        }
+        .input_form label{
+            text-align: center;
+        }
+        .table_results h2 {
+            font-size: 60px;
+        }
+        table {
+            margin: 50px auto;
+            margin-top: 150px;
+            font-size: 36px;
+        }
+    }
+    @media (max-width: 702px) {
+        .send {
+            font-size: 20px;
+            width: 196px;
+            height: 49px;
+        }
+        .heads .head img {
+            width: 100px;
+        }
+        .table_results h2 {
+            font-size: 30px;
+        }
+        table {
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 534px) {
+        .table-results .container {
+            max-height: 400px;
+        }
+        .heads {
+            margin-top: 40px;
+        }
+        .heads .head img {
+            width: 60px;
+        }
+        table {
+            font-size: 1em;
+            margin: 100px auto;
+        }
+        .input_form input {
+            font-size: 24px;
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        form label{
+            font-size: 24px;
+        }
+        .heads {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+/* СТРАНИЦА ИСТОРИЯ */
+.history_1 {
+    height: 768px;
+    background-color: #111030;
+}
+.history .container {
+    padding: 50px 50px 30px 50px;
+}
+h2 {
+    font-family: Roboto;
+    font-size: 72px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+.history_1 p {
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+}
+.history_1 p span {
+    color: var(--orange-color);
+}
+.history_1 .slider_wrapper {
+    margin: 50px auto;
+    width: 400px;
+    height: 300px;
+    background-color: var(--orange-color);
+}
+.history_1 .slider_wrapper img {
+    height: 100%;
+    width: 100%;
+}
+/* СЕКЦИЯ УЧАСТНИКИ */
+.players {
+    background: url(/img/history/bg_players.jpg) center center/cover no-repeat;
+}
+.wrapper_players {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.players_info {
+    overflow: auto;
+    margin-top: 30px;
+    padding: 20px;
+    width: 342px;
+    height: 263px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+}
+.players_info h3 {
+    margin-bottom: 5px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--blue-color);
+}
+.players_info .player_img {
+    float: left;
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.players_info p {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* СЕКЦИЯ ИТОГИ СЕЗОНОВ */
+.history_all_seasons {
+    min-height: 700px;
+    background-color: #111030;
+}
+.history_all_seasons .container {
+    min-height: 800px;
+}
+.wrapper_all_seasons {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+}
+.history_all_seasons .wrapper_all_seasons h4{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.history_all_seasons .wrapper_all_seasons .seasons img{
+    margin-top: 40px;
+    width: 100%;
+}
+.seasons {
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+}
+.season_active {
+    transform: scale(2.5);
+    transition-duration: 1s;
+}
+.seasons:hover {
+    box-shadow: 0.2px 3px 24.3px 2.7px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: 60px;
+    }
+    .players_info {
+        margin-top: 20px;
+        padding: 20px;
+        width: 280px;
+        min-height: 220px;
+    }
+    .players_info h3 {
+        font-size: 24px;
+    }
+    .players_info .text_player {
+        margin-left: 5px;
+        width: 55%;
+        font-size: 16px;
+    }
+    .players_info .player_img {
+        width: 40%;
+    }
+}
+@media (max-width: 702px) {
+    h2 {
+        font-size: 40px;
+    }
+    .history_1 p {
+        font-size: 20px;
+    }
+    .history_1 .slider_wrapper {
+        margin: 50px auto;
+        width: 100%;
+        height: 250px;
+    }
+    .players_info {
+        margin: 20px auto;
+    }
+}
+@media (max-width: 400px) {
+    .history_1 .slider_wrapper {
+        margin: 30px auto;
+        height: 150px;
+    }
+    .players_info {
+        height: 200px;
+        padding: 5px;
+    }
+    .players_info h3 {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+}
+
+/* РАЗДЕЛ ПРИКОЛЮХИ */
+.fun {
+    background: url(/img/fun/bg1.jpg) center center/cover no-repeat;
+    min-height: 1024px;
+}
+.fun_stuff {
+    padding: 50px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3 {
+    font-family: Roboto;
+    font-size: 60px;
+    color: white;
+}
+/* cursor*/
+.txt-type > .txt {
+    border-right: 1px solid #777;
+}
+
+

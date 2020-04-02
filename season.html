@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Сезон</title>
+</head>
+<body class = 'season'>
+    <div class="wrapper">
+        <header>
+            <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile_menu">
+                <ul>
+                    <li><a href="/index.html" class = 'active_header menu_item'>Главная</a></li>
+                    <li><a href="#" class = 'active_header menu_item'>Сезон</a></li>
+                    <li class = 'history_head menu_item'><a href="/history.html">История</a></li>
+                    <li class = 'menu_item'><a href="/fun.html">Приколюхи</a></li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <img src="/img/main/Logo_tourn.png" alt="logo" class="logo_tp">
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="#"  class = 'active_header'>Сезон</a></li>
+                    <li class = 'history_head'><a href="/history.html">История<img src="/img/main/arrow.png" alt="arrow" class="arrow"></a>
+                            <ul class="history_submenu">
+                                <li><a href="/history.html">Основание</a></li>
+                                <li><a href="/history.html#players_id">Участники</a></li>
+                                <li><a href="/history.html#seasons_id">Итоги сезонов</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="/fun.html">Приколюхи</a></li>
+                    <li><a href="https://vk.com/turnirprognoz2019" target = '_blank'><img src="/img/main/vk_logo.png" alt="vk" class="vk_nav"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section class = 'write_results'>
+        <div class="container">
+            <form action="#">
+                <label class="input_form"> 
+                    Имя
+                    <input required name="name" type="text" placeholder = 'Ваше имя'>
+                </label>
+                <label class="input_form">
+                    Пароль
+                    <input required name="password" type="text" placeholder = 'Пароль'>
+                </label>
+                <label class="input_form">
+                    Прогноз
+                    <input required name="forecast" type="text" placeholder = 'Введите прогноз'>
+                </label>
+                    <button class='send'>Отправить</button>
+            </form>
+            <p class = 'text_uciki'>Уцики, которые уже спрогнозировали</p>
+            <div class="heads">
+                <div class="head lev"><img src="/img/season/Lev_dark_head.png" alt="ЛЕВ"></div>
+                <div class="head tit"><img src="/img/season/Tit_dark_head.png" alt="ТИТ"></div>
+                <div class="head ryk"><img src="/img/season/Ryk_dark_head.png" alt="РЫК"></div>
+                <div class="head pas"><img src="/img/season/Pas_dark_head.png" alt="ПАС"></div>
+            </div>
+        </div>
+    </section>
+    <section class = 'table_results'>
+        <div class="container">
+            <h2>9 сезон</h2>
+            <table>
+                <tr class = 'head_table'>
+                    <td></td>
+                    <td>Сезон</td>
+                    <td>Месяц</td>
+                    <td>Неделя</td>
+                </tr>
+                <tr>
+                    <td class = 'name'>Левшаков</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class = 'name'>Титов</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td class = 'name'>Пасюк</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class = 'name'>Рыкованов</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <ul class = 'footer_list'>
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/season.html">Сезон</a></li>
+            <li><a href="/history.html">История</a></li>
+            <li><a href="/fun.html">Приколюхи</a></li>
+            <li><a href="https://vk.com/turnirprognoz2019" target = '_blank'><img src="/img/main/vk_logo.png" alt=""></a></li>
+        </ul>
+    </footer>
+    <script src = '/js/action.js'></script>
+</body>
+</html>
