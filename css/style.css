@@ -431,7 +431,7 @@ form .input_form {
 /* СЕКЦИЯ РЕЗУЛЬТАТОВ */
 .table_results {
     background: url(/img/season/bg_table_results.jpg) center center/cover no-repeat;
-    height: 768px;
+    min-height: 768px;
 }
 .table_results h2 {
     margin-top: 40px;
@@ -461,6 +461,24 @@ table tr {
 table .name {
     text-align: right;
     color: var(--orange-color);
+}
+.table_results h3 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: 20px auto;
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: var(--orange-color);
+    color: black;
 }
 
     @media (max-width: 900px) {
