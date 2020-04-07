@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Сезон</title>
+    <title>Админ</title>
 </head>
-<body class = 'season'>
+<body class = 'admin'>
     <div class="wrapper">
         <header>
             <div class="lines">
@@ -20,16 +20,16 @@
             <nav class="mobile_menu">
                 <ul>
                     <li><a href="index.html" class = 'active_header menu_item'>Главная</a></li>
-                    <li><a href="#" class = 'active_header menu_item'>Сезон</a></li>
+                    <li><a href="season.html" class = 'active_header menu_item'>Сезон</a></li>
                     <li class = 'history_head menu_item'><a href="history.html">История</a></li>
                     <li class = 'menu_item'><a href="fun.html">Приколюхи</a></li>
                 </ul>
             </nav>
             <nav class="menu">
-                <img src="img/main/Logo_tourn.png" alt="logo" class="logo_tp">
+                <img src="/img/main/Logo_tourn.png" alt="logo" class="logo_tp">
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#"  class = 'active_header'>Сезон</a></li>
+                    <li><a href="season.html">Сезон</a></li>
                     <li class = 'history_head'><a href="history.html">История<img src="img/main/arrow.png" alt="arrow" class="arrow"></a>
                             <ul class="history_submenu">
                                 <li><a href="history.html">Основание</a></li>
@@ -43,43 +43,34 @@
             </nav>
         </header>
     </div>
-    <section class = 'write_results'>
-        <div class="container">
-            <form action="#">
-                <label class="input_form"> 
-                    Имя
-                    <input required name="name" type="text" placeholder = 'Имя'>
-                </label>
-                <label class="input_form">
-                    Прогноз
-                    <input required name="forecast" type="text" placeholder = 'Введите прогноз'>
-                </label>
-                <p class = 'text_uciki'>Найди себя</p>
-                <div class="heads">
-                    <div class="head lev">
-                        <img src="img/season/Lev_dark_head.png" alt="ЛЕВ">
-                        <span>&#10004;</span>
-                    </div>
-                    <div class="head tit">
-                        <img src="img/season/Tit_dark_head.png" alt="ТИТ">
-                        <span>&#10004;</span>
-                    </div>
-                    <div class="head ryk">
-                        <img src="img/season/Ryk_dark_head.png" alt="РЫК">
-                        <span>&#10004;</span>
-                    </div>
-                    <div class="head pas">
-                        <img src="img/season/Pas_dark_head.png" alt="ПАС">
-                        <span>&#10004;</span>
-                    </div>
-                </div>
-                    <button class='send'>Отправить</button>
-            </form>
+    <div class="container">
+        <h1>Рассчет результатов</h1>
+        <form action="#">
+            <label class="input_form"> 
+                Admin
+                <input required name="name" type="text" placeholder = 'Имя'>
+            </label>
+            <label class="input_form">
+                Результаты
+                <input required name="forecast" type="text" placeholder = 'Введите результаты'>
+            </label>
+                <button class='send'>Считаем</button>
+        </form>
+        <div class="heads">
+            <div class="head lev">
+                <img src="img/season/Lev_dark_head.png" alt="ЛЕВ">
+            </div>
+            <div class="head tit">
+                <img src="img/season/Tit_dark_head.png" alt="ТИТ">
+            </div>
+            <div class="head ryk">
+                <img src="img/season/Ryk_dark_head.png" alt="РЫК">
+            </div>
+            <div class="head pas">
+                <img src="img/season/Pas_dark_head.png" alt="ПАС">
+            </div>
         </div>
-    </section>
-    <section class = 'table_results'>
-        <div class="container">
-            <h2>9 сезон</h2>
+        <div class="results">
             <table>
                 <tr class = 'head_table'>
                     <td></td>
@@ -102,40 +93,18 @@
                 <tr>
                     <td class = 'name'>Пасюк</td>
                     <td class = 'season_result'>6</td>
-                    <td>8</td>
+                    <td>7</td>
                     <td class = 'week_result'>0</td>
                 </tr>
                 <tr>
                     <td class = 'name'>Рыкованов</td>
                     <td class = 'season_result'>9</td>
-                    <td>8</td>
+                    <td>10</td>
                     <td class = 'week_result'>0</td>
                 </tr>
             </table>
-            <h3>До окончания сезона</h3>
-            <div class="timer">
-                <span class="days">12</span>
-                <span>д-</span>
-                <span class="hours">4</span>
-                <span>:</span>
-                <span class="minutes">34</span>
-                <span>:</span>
-                <span class="seconds">23</span>
-            </div>
         </div>
-    </section>
-    <footer>
-        <ul class = 'footer_list'>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="season.html">Сезон</a></li>
-            <li><a href="history.html">История</a></li>
-            <li><a href="fun.html">Приколюхи</a></li>
-            <li><a href="https://vk.com/turnirprognoz2019" target = '_blank'><img src="img/main/vk_logo.png" alt=""></a></li>
-        </ul>
-    </footer>
-    <script src = 'js/timer.js'></script>
-    <script src = 'js/inputForecasts.js'></script>
-    <script src = 'js/menu.js'></script>
-    <script src = 'js/table.js'></script>
+    </div>
+    <script src = 'js/pointsCalc.js'></script>
 </body>
 </html>

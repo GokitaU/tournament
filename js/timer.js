@@ -29,7 +29,6 @@ function setClock(classItem, endtime) {
 
 function updateClock() {
     let t = getTimeRemaining(endtime);
-    console.log(t);
     days.textContent = t.days;
     hours.textContent = t.hours;
     minutes.textContent = t.minutes;

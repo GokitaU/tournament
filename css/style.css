@@ -373,7 +373,7 @@ button:hover {
     padding: 10px 50px 30px 50px;
 }
 form {
-    margin: 10px 160px 0 0;
+    margin: 10px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -382,7 +382,7 @@ form {
     padding-top: 50px;
 }
 form .input_form {
-    margin-top: 40px;
+    margin: 20px 25% 20px 0;
     color: var(--orange-color);
     font-family: Roboto;
     font-size: 30px;
@@ -403,21 +403,21 @@ form .input_form {
 .input_form input:hover {
     box-shadow: 0.2px 3px 24.3px 2.7px rgba(255, 255, 255, 0.25);
 }
-.send {
-    margin: 40px 100px 0 0;
+form .send {
+    margin: 50px auto;
     font-size: 20px;
     width: 196px;
     height: 49px;
 }
 .text_uciki {
-    margin-top: 50px;
+    margin: 20px auto;
     font-family: Roboto;
     font-size: 24px;
-    text-align: center;
+    /* text-align: center; */
     color: #ffffff;
 }
 .heads {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -426,6 +426,12 @@ form .input_form {
     position: static;
     display: block;
     margin: 20px 10px 0 10px;
+    cursor: pointer;
+}
+.heads .head span {
+    display: none;
+    color: green;
+    font-size: 30px;
 }
 
 /* СЕКЦИЯ РЕЗУЛЬТАТОВ */
@@ -753,5 +759,13 @@ h3 {
 .txt-type > .txt {
     border-right: 1px solid #777;
 }
-
-
+/* страница админа */
+.admin {
+    background-color: darkgreen;
+}
+.admin .container {
+    padding: 50px;
+}
+.admin .container h1 {
+    font-size: 40px;
+}
