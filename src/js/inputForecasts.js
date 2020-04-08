@@ -21,30 +21,30 @@ document.addEventListener('DOMContentLoaded', ()=> {
     // Отображения голов
     function levActive() {
         if (!lev.active) {
-            everyHead[0].src = '/img/season/Lev_dark_head.png';}
+            everyHead[0].src = '../img/season/Lev_dark_head.png';}
             else {
-            everyHead[0].src = '/img/season/Lev_light_head.png';
+            everyHead[0].src = "../img/season/Lev_light_head.png";
             }
     }
     function titActive() {
         if (!tit.active) {
-            everyHead[1].src = '/img/season/Tit_dark_head.png';}
+            everyHead[1].src = '../img/season/Tit_dark_head.png';}
             else {
-            everyHead[1].src = '/img/season/Tit_light_head.png';
+            everyHead[1].src = '../img/season/Tit_light_head.png';
             }
     }
     function rykActive() {
         if (!ryk.active) {
-            everyHead[2].src = '/img/season/Ryk_dark_head.png';}
+            everyHead[2].src = '../img/season/Ryk_dark_head.png';}
             else {
-            everyHead[2].src = '/img/season/Ryk_light_head.png';
+            everyHead[2].src = '../img/season/Ryk_light_head.png';
             }
     }
     function pasActive() {
         if (!pas.active) {
-            everyHead[3].src = '/img/season/Pas_dark_head.png';}
+            everyHead[3].src = '../img/season/Pas_dark_head.png';}
             else {
-            everyHead[3].src = '/img/season/Pas_light_head.png';
+            everyHead[3].src = '../img/season/Pas_light_head.png';
             } 
     }
     function allActive() {

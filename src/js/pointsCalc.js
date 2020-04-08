@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let everyHead = document.querySelectorAll('.head img');
     // показываем, кто оставил прогноз
     if (localStorage.getItem('lev')) {
-        everyHead[0].src = '/img/season/Lev_light_head.png';
+        everyHead[0].src = '../img/season/Lev_light_head.png';
     }
     if (localStorage.getItem('tit')) {
-        everyHead[1].src = '/img/season/Tit_light_head.png';
+        everyHead[1].src = '../img/season/Tit_light_head.png';
     }
     if (localStorage.getItem('ryk')) {
-        everyHead[2].src = '/img/season/Ryk_light_head.png';
+        everyHead[2].src = '../img/season/Ryk_light_head.png';
     }
     if (localStorage.getItem('pas')) {
-        everyHead[3].src = '/img/season/Pas_light_head.png';
+        everyHead[3].src = '../img/season/Pas_light_head.png';
     }
 
     let form = document.querySelector('form');
